@@ -7,50 +7,50 @@ export const productsData = [
     },
     {
         id: 2,
-        title: "Queen panel bed",
-        price: 999.99,
+        title: "King size panel bed",
+        price: 699.99,
         imageUrl: "./images/product-2.jpeg"
     },
     {
         id: 3,
         title: "Queen panel bed",
-        price: 999.99,
+        price: 499.99,
         imageUrl: "./images/product-3.jpeg"
     },
     {
         id: 4,
         title: "Queen panel bed",
-        price: 999.99,
+        price: 1199.99,
         imageUrl: "./images/product-4.jpeg"
     },
     {
         id: 5,
         title: "Queen panel bed",
-        price: 999.99,
+        price: 399.99,
         imageUrl: "./images/product-5.jpeg"
     },
     {
         id: 6,
         title: "Queen panel bed",
-        price: 999.99,
+        price: 799.99,
         imageUrl: "./images/product-6.jpeg"
     },
     {
         id: 7,
         title: "Queen panel bed",
-        price: 999.99,
+        price: 1499.99,
         imageUrl: "./images/product-7.jpeg"
     },
     {
         id: 8,
         title: "Queen panel bed",
-        price: 999.99,
+        price: 299.99,
         imageUrl: "./images/product-8.jpeg"
     },
     {
         id: 9,
         title: "Queen panel bed",
-        price: 999.99,
+        price: 399.99,
         imageUrl: "./images/product-9.jpeg"
     },
 
