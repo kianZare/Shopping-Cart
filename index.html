@@ -9,63 +9,81 @@
     <title>Shopping Cart</title>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="navbar-center">
-            <span class="bar-icon">
-                <i class="fa-solid fa-bars"></i>
-            </span>
-            <p class="nav-title">Kian Shop</p>
-            <span class="cart-btn">
-                <i class="fas fa-cart-plus"></i>
-                <span class="cart-item">0</span>
-            </span>
-        </div>
-    </nav>
-    <!-- products -->
-    <section>
-        <div class="products">
-            <h2 class="section-title">Our Products</h2>
-            <!-- single products -->
-            <div class="products-center">
-                <!-- products -->
-                <!-- <section class="product">
-                    <div class="img-container">
-                        <img class="product-img" src="./images/product-1.jpeg" alt="p -1">
-                    </div>
-                    <div class="product-desc">
-                        <p class="product-title">Queen panel bed</p>
-                        <p class="product-price">£ 999.99</p>
-                    </div>
-                    <button class="add-to-cart">add to cart</button>
-                </section> -->
-                </div>
-
-    <!-- products -->
-    <!-- cart section -->
-    <section class="cart-center">
-        <div class="backdrop"></div>
-        <div class="cart">
-            <h3 class="cart-title">Your Cart</h3>
-            <div class="cart-content">
-                <!-- single item -->
-                <!-- <div class="cart-items">
-                    <img class="cart-item-img" src="./images/product-1.jpeg"/>
-                    <div class="cart-item-desc">
-                        <h4>Product title</h4>
-                        <h5>£ 999.99</h5>
-                    </div>
-                    <div class="cart-item-conteoller">
-                        <i class="fas fa-chevron-up"></i>
-                        <p>1</p>
-                        <i class="fas fa-chevron-down"></i>
-                    </div>
-                    <i class="far fa-trash-alt"></i>
-                </div> -->
+    <header>
+        <div class="header">
+            <h1 class="title">Product Filter</h1>
+            <div class="search-box">
+                <form>
+                    <input type="text" id="search" placeholder="search products ..."/>
+                </form>
             </div>
-            <div class="cart-footer">
-                <span class="cart-total">Total price: £ 999.00</span>
-                <button class="btn clear-cart">clear cart</button>
-                <button class="btn cart-item-confirm">confirm</button>
+            <div class="filter-box">
+                <a href="#" class="btn" data-filter>All</a>
+                <a href="#" class="btn" data-filter>watch</a>
+                <a href="#" class="btn" data-filter>shirt</a>
+                <a href="#" class="btn" data-filter>gown</a>
+                <a href="#" class="btn" data-filter>jewellery</a>
+                <a href="#" class="btn" data-filter>shoes</a>
+            </div>
+        </div>
+    </header>
+    <!-- products -->
+    <section class="products">
+        <!-- single product -->
+        <div class="products-center">
+            <div class="product">
+                <div class="img-container">
+                    <img src="./images/product-1.jpeg" alt="p-1">
+                </div>
+                <div class="product-desc">
+                    <p class="product-price">$ 25</p>
+                    <p class="product-title">watch product</p>
+                </div>
+            </div>
+            <div class="product">
+                <div class="img-container">
+                    <img src="./images/product-2.jpeg" alt="p-2">
+                </div>
+                <div class="product-desc">
+                    <p class="product-price">$ 25</p>
+                    <p class="product-title">watch product</p>
+                </div>
+            </div>
+            <div class="product">
+                <div class="img-container">
+                    <img src="./images/product-3.jpeg" alt="p-3">
+                </div>
+                <div class="product-desc">
+                    <p class="product-price">$ 25</p>
+                    <p class="product-title">watch product</p>
+                </div>
+            </div>
+            <div class="product">
+                <div class="img-container">
+                    <img src="./images/product-4.jpeg" alt="p-4">
+                </div>
+                <div class="product-desc">
+                    <p class="product-price">$ 25</p>
+                    <p class="product-title">watch product</p>
+                </div>
+            </div>
+            <div class="product">
+                <div class="img-container">
+                    <img src="./images/product-5.jpeg" alt="p-5">
+                </div>
+                <div class="product-desc">
+                    <p class="product-price">$ 25</p>
+                    <p class="product-title">watch product</p>
+                </div>
+            </div>
+            <div class="product">
+                <div class="img-container">
+                    <img src="./images/product-6.jpeg" alt="p-6">
+                </div>
+                <div class="product-desc">
+                    <p class="product-price">$ 25</p>
+                    <p class="product-title">watch product</p>
+                </div>
             </div>
         </div>
     </section>

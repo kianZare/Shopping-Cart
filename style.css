@@ -25,11 +25,144 @@ body{
     position: relative;
 }
 
-.navbar{
-    background-color: var(--secondaryColor);
-    height: 60px;
+.header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 170px;
+    background-color:var(--secondaryColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 10;
+    padding-bottom: 1rem;
+}
+
+#search{
+    border: none;
+    outline: none;
+    width: 20rem;
+    padding: 0.4rem 1rem;
+    border-radius: 8px;
+    font-weight: bold;
+}
+#search:focus{
+    border: 2px solid var(--primaryColor);
+}
+
+.filter-box {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+.filter-box a{
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+.btn{
+    border: 1px solid var(--primaryColor);
+    border-radius: 8px;
+    padding: 0.3rem;
+    color: var(--primaryColor);
+}
+.btn:hover{
+    background-color: var(--primaryColor);
+    color: var(--secondaryColor);
+}
+
+
+/* .............. */
+.products{
     display: flex;
     align-items: center;
+    flex-direction: column;
+    padding: 1.2rem;
+}
+
+.products-center{
+    width: 90vh;
+    margin: 0 auto;
+    max-width: 1170px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-column-gap: 3rem;
+    grid-row-gap: 5rem;
+
+}
+
+.product {
+    background-color: var(--mainWhite);
+    padding-bottom: 1rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product img{
+    display: block;
+    width: 100%;
+    min-height: 12rem;
+    border-radius: 12px 12px 0 0;
+}
+
+.product-desc {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .navbar{
+    position: static;
+    background-color: var(--secondaryColor);
+    height: 170px;
+    display: flex;
     justify-content: center;
 }
 .navbar-center{
@@ -39,10 +172,19 @@ body{
     width: 100%;
     max-width: 1170px;
     padding: 0 1.2rem;
+    
+}
+
+.nav-search{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
 }
 
 .nav-title{
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 .bar-icon{
@@ -52,6 +194,37 @@ body{
 .nav-title{
     color: var(--mainBlack);
 }
+
+.btn{
+    display: flex;
+    justify-content: center;
+    padding: 0.35rem;
+    min-width: 4rem;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 1px solid var(--primaryColor);
+    color: var(--primaryColor);
+    text-decoration: none;
+}
+.btn:hover{
+    background-color: var(--primaryColor);
+    color: var(--mainWhite);
+}
+
+.filter-box{
+    display: flex;
+    width: 1100px;
+    justify-content: space-around;
+
+}
+#search{
+    width: 20rem;
+    padding: 0.4rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+}
+
 
 .cart-btn{
     color: var(--primaryColor);
@@ -76,23 +249,32 @@ body{
     font-size: 0.8rem;
 
 }
+
 .section-title {
-    margin: 2rem; ;
-    /* background-color: #6d28d9; */
+    margin: 1rem; ;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 .products{
     display: flex;
     align-items: center;
     flex-direction: column;
     padding: 1.2rem;
-    /* background-color: var(--mainGray); */
 }
 
 .products-center{
     width: 100%;
     max-width: 1170px;
-    /* background-color: #db2777; */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     grid-column-gap: 3rem;
@@ -142,14 +324,14 @@ body{
     font-size: 1.5rem;
     color: var(--primaryColor);
     font-weight: bold;
-}
+} */
 
 
 
 /* ...........................Cart........................... */
-
+/* 
 .backdrop{
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.25);
     position: fixed;
     top: 0;
     left: 0;
@@ -170,13 +352,13 @@ body{
     margin: 0 auto;
     background-color: #fff;
     border: 1px solid #ccc;
-    box-shadow: 0 20px 120px rgba(0,0,0,0.07);
+    box-shadow: 0 20px 120px rgba(0,0,0,0.5);
     border-radius: 5px;
     opacity: 0;
     transition: all 0.5s ease-in-out;
     top: -100%;
     position: absolute;
-    left: 30%;
+    left: 32%;
 }
 .cart-title{
     text-align: center;
@@ -245,14 +427,7 @@ body{
     margin-right: 10px;
 }
 
-.btn{
-    padding: 0.35rem;
-    border-radius: 10px;
-    cursor: pointer;
-    border: 1px solid var(--primaryColor);
-    font-weight: bold;
-    color: var(--primaryColor);
-}
+
 .fa-trash-alt{
     cursor: pointer;
-}
+} */
